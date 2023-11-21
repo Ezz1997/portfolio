@@ -1,8 +1,10 @@
 import React from "react";
-import { Avatar, Heading, VStack } from "@chakra-ui/react";
+import { Avatar, Heading, VStack, Box} from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
+import "../App.css"
+import personal_img from "../images/personal_image.jpg"
 
-const greeting = "Hello, I am Pete!";
+const greeting = "Hello, I am Ezz!";
 const bio1 = "A frontend developer";
 const bio2 = "specialised in React";
 
@@ -15,8 +17,19 @@ const LandingSection = () => (
     isDarkBackground
     backgroundColor="#2A4365"
   >
+    <VStack spacing={4}>
+      <img className="profile-img" src={personal_img} alt="personal image" />
+      <Box textAlign="center" className="greeting">
+        <p>{greeting}</p>
+      </Box>
+      <Box className="bio" textAlign="center">
+        <p>{bio1}</p>
+        <p>{bio2}</p>
+      </Box>
+    </VStack>
 
   </FullScreenSection>
+
 );
 
 export default LandingSection;
