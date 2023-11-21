@@ -70,9 +70,9 @@ const Header = () => {
             })}
           </nav>
           <nav>
-            <HStack spacing={8}>
-              <a href="/#projects" onClick={handleClick('projects')} data-testid="projects-section">Projects</a>
-              <a href="/#contact-me" onClick={handleClick('contact-me')}>Contact Me</a>
+            <HStack spacing={8} >
+              <a href="/#projects" onClick={handleClick('projects')} data-testid="projects-section" className="inline-link">Projects</a>
+              <a href="/#contact-me" onClick={handleClick('contact-me')} className="inline-link">Contact Me</a>
             </HStack>
           </nav>
         </HStack>
