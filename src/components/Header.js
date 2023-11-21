@@ -12,24 +12,19 @@ import "../App.css";
 
 const socials = [
   {
+    id: 0,
     icon: faEnvelope,
-    url: "mailto: hello@example.com",
+    url: "mailto:ezmarie97@gmail.com",
   },
   {
+    id: 1,
     icon: faGithub,
-    url: "https://github.com",
+    url: "https://github.com/Ezz1997",
   },
   {
+    id: 2,
     icon: faLinkedin,
-    url: "https://www.linkedin.com",
-  },
-  {
-    icon: faMedium,
-    url: "https://medium.com",
-  },
-  {
-    icon: faStackOverflow,
-    url: "https://stackoverflow.com",
+    url: "https://www.linkedin.com/in/ezz-maree-9177b926b/",
   },
 ];
 
@@ -65,10 +60,10 @@ const Header = () => {
           alignItems="center"
         >
           <nav>
-            {socials.map(item => {
-              const {icon, url} = item;
+            {socials.map((item, index) => {
+              const {id, icon, url} = item;
               return(
-                <a href={url}>
+                <a href={url} key={id} data-testid={`social-link-${index}`}>
                   <FontAwesomeIcon icon={icon} size="2x" className="social-icon"/>
                 </a>
               );
