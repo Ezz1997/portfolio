@@ -7,12 +7,13 @@ import React from "react";
 
 const Card = ({ title, description, imageSrc }) => {
   return (
-    <ChakraCard maxW='md'>
+    <ChakraCard maxW='prose'>
+      <Image
+        objectFit='cover'
+        src={imageSrc}
+      borderRadius='lg'
+      />
       <CardBody>
-        <Image
-          src={imageSrc}
-          borderRadius='lg'
-        />
         <Stack mt='6' spacing='3'>
           <Heading size='md'>{title}</Heading>
           <Text>
@@ -22,9 +23,9 @@ const Card = ({ title, description, imageSrc }) => {
       </CardBody>
       <Divider />
       <CardFooter>
-        <Button variant='ghost' colorScheme='black'>
+        <Button variant='link' colorScheme='black'>
           See more
-          <FontAwesomeIcon icon={faArrowRight} size="1x" style={{paddingLeft: "4px"}}/>
+          <FontAwesomeIcon icon={faArrowRight} size="1x" style={{ paddingLeft: "4px" }} />
         </Button>
       </CardFooter>
     </ChakraCard>
