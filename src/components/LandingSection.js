@@ -2,9 +2,8 @@ import React from "react";
 import { Avatar, Heading, VStack, Box} from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import "../App.css"
-import personal_img from "../images/personal_image.jpg"
 
-const greeting = "Hello, I am Ezz!";
+const greeting = "Hello, I am Pete!";
 const bio1 = "A frontend developer";
 const bio2 = "specialised in React";
 
@@ -18,7 +17,7 @@ const LandingSection = () => (
     backgroundColor="#2A4365"
   >
     <VStack spacing={4}>
-      <img className="profile-img" src={personal_img} alt="personal image" />
+      <img className="profile-img" src="https://i.pravatar.cc/150?img=7" alt="personal image" />
       <Box textAlign="center" className="greeting">
         <p>{greeting}</p>
       </Box>

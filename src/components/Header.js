@@ -14,17 +14,27 @@ const socials = [
   {
     id: 0,
     icon: faEnvelope,
-    url: "mailto:ezmarie97@gmail.com",
+    url: "mailto: hello@example.com",
   },
   {
     id: 1,
     icon: faGithub,
-    url: "https://github.com/Ezz1997",
+    url: "https://github.com",
   },
   {
     id: 2,
     icon: faLinkedin,
-    url: "https://www.linkedin.com/in/ezz-maree-9177b926b/",
+    url: "https://www.linkedin.com",
+  },
+  {
+    id: 3,
+    icon: faMedium,
+    url: "https://medium.com",
+  },
+  {
+    id: 4,
+    icon: faStackOverflow,
+    url: "https://stackoverflow.com",
   },
 ];
 
@@ -51,6 +61,7 @@ const Header = () => {
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
       backgroundColor="#18181b"
+      zIndex={1}
     >
       <Box color="white" maxWidth="1280px" margin="0 auto">
         <HStack
