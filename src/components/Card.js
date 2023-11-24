@@ -1,6 +1,5 @@
-import { HStack, Image, Text, VStack, Stack, Divider } from "@chakra-ui/react";
+import { Image, Text, Stack, Divider, Button } from "@chakra-ui/react";
 import { Card as ChakraCard, CardBody, Heading, CardFooter } from "@chakra-ui/react";
-import { Button, ButtonGroup } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
