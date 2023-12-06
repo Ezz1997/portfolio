@@ -5,7 +5,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from '@chakra-ui/react'
 import React from "react";
 
-const Card = ({ title, description, imageSrc, url }) => {
+const Card = ({ title, description, imageSrc, url}) => {
   return (
     <ChakraCard maxW='prose'>
       <Image

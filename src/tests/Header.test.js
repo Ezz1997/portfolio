@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Header from '../components/Header';
 
 test('renders social media icons with correct links', () => {
