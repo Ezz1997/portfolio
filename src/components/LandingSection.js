@@ -5,15 +5,15 @@ import PersonalImage from "../images/personal_image.jpg";
 import "../App.css"
 
 const greeting = "Hello, I am Ezz!";
-const bio1 = "A frontend developer";
-const bio2 = "specialised in React";
+const bio1 = "A Frontend Developer";
+const bio2 = "Specialised in React";
 
 const LandingSection = () => (
   <FullScreenSection
     justifyContent="center"
     alignItems="center"
     isDarkBackground
-    backgroundColor="#2A4365"
+    backgroundColor="#2a6165"
   >
     <VStack spacing={4}>
       <img className="profile-img" src={PersonalImage} alt="personal image" />

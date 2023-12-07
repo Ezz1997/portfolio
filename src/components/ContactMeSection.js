@@ -56,7 +56,7 @@ const LandingSection = () => {
   return (
     <FullScreenSection
       isDarkBackground
-      backgroundColor="#512DA8"
+      backgroundColor="#2f2a65"
       py={16}
       spacing={8}
     >
@@ -79,12 +79,12 @@ const LandingSection = () => {
               </FormControl>
               <FormControl>
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel>
-                <Select {...formik.getFieldProps('type')} id="type" name="type">
-                  <option value="hireMe">Freelance project proposal</option>
-                  <option value="openSource">
+                <Select {...formik.getFieldProps('type')} id="type" name="type" >
+                  <option value="hireMe" style={{background: '#2f2a65'}}>Freelance project proposal</option>
+                  <option value="openSource" style={{background: '#2f2a65'}}>
                     Open source consultancy session
                   </option>
-                  <option value="other">Other</option>
+                  <option value="other" style={{background: '#2f2a65'}}>Other</option>
                 </Select>
               </FormControl>
               <FormControl isInvalid={formik.errors.comment && formik.touched.comment}>
@@ -92,7 +92,7 @@ const LandingSection = () => {
                 <Textarea {...formik.getFieldProps('comment')} id="comment" height={250} />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
-              <Button type="submit" colorScheme="purple" width="full" isLoading={isLoading}>
+              <Button type="submit" colorScheme="purple"  width="full" isLoading={isLoading}>
                 Submit
               </Button>
             </VStack>
