@@ -1,13 +1,9 @@
-.social-icon{
-    margin-right: 0.8rem;
-}
-
 .social-icon:hover{
     transform: rotateY(360deg);
     transition: 3s;
 }
 
-.profile-img{
+/* .profile-img{
     width:12rem;
     height:12rem;
     border-radius: 50%;
@@ -17,7 +13,7 @@
 
 .profile-img:hover {
     box-shadow: 0 0 2px 1px rgba(244, 246, 244, 0.5);
-}
+} */
 
 .bio{
     font-size: 2rem;

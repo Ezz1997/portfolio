@@ -10,23 +10,45 @@ import "../App.css";
 
 const socials = [
   {
-    id: 0,
     icon: faEnvelope,
     url: "mailto: ezmarie97@gmail.com",
   },
   {
-    id: 1,
     icon: faGithub,
     url: "https://github.com/Ezz1997",
   },
   {
-    id: 2,
     icon: faLinkedin,
     url: "https://www.linkedin.com/in/ezz-maree-9177b926b/",
   },
 ];
 
 const Header = () => {
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    let prevScrollPos = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const headerElement = headerRef.current;
+      if (!headerElement) {
+        return;
+      }
+      if (prevScrollPos > currentScrollPos) {
+        headerElement.style.transform = "translateY(0)";
+      } else {
+        headerElement.style.transform = "translateY(-200px)";
+      }
+      prevScrollPos = currentScrollPos;
+    }
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, []);
+
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
     const element = document.getElementById(id);
@@ -49,7 +71,7 @@ const Header = () => {
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
       backgroundColor="#18181b"
-      zIndex={1}
+      ref={headerRef}
     >
       <Box color="white" maxWidth="1280px" margin="0 auto">
         <HStack
@@ -57,22 +79,22 @@ const Header = () => {
           py={4}
           justifyContent="space-between"
           alignItems="center"
-          flexWrap="wrap"
         >
           <nav>
-            {socials.map((item, index) => {
-              const {id, icon, url} = item;
-              return(
-                <a href={url} target="_blank" key={id} data-testid={`social-link-${index}`}>
-                  <FontAwesomeIcon icon={icon} size="2x" className="social-icon"/>
-                </a>
-              );
-            })}
+            <HStack spacing={4}>
+              {socials.map(({ icon, url }, index) => {
+                return (
+                  <a href={url} target="_blank" key={url} rel="noopener noreferrer"  data-testid={`social-link-${index}`}>
+                    <FontAwesomeIcon icon={icon} size="2x" className="social-icon" key={url}/>
+                  </a>
+                );
+              })}
+            </HStack>
           </nav>
           <nav>
             <HStack spacing={4} >
-              <a href="/#projects" onClick={handleClick('projects')} data-testid="projects-section" className="inline-link">Projects</a>
-              <a href="/#contact-me" onClick={handleClick('contact-me')} className="inline-link">Contact Me</a>
+              <a href="#projects" onClick={handleClick('projects')} data-testid="projects-section" className="inline-link">Projects</a>
+              <a href="#contactme" onClick={handleClick('contactme')} className="inline-link">Contact Me</a>
             </HStack>
           </nav>
         </HStack>

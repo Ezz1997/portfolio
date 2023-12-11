@@ -51,7 +51,6 @@ const ProjectsSection = () => {
       alignItems="flex-start"
       spacing={8}
     >
-      <br />
       <Heading as="h1" id="projects-section">
         Featured Projects
       </Heading>
@@ -59,7 +58,6 @@ const ProjectsSection = () => {
         display="grid"
         gridTemplateColumns="repeat(2,minmax(0,1fr))"
         gridGap={8}
-        flexWrap="wrap"
       >
         {projects.map((project, index) => (
           <Card
