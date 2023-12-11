@@ -8,10 +8,11 @@
 }
 
 .profile-img{
+    width:12rem;
+    height:12rem;
     border-radius: 50%;
-    padding: 0.4rem;
-    width: 12rem;
-    height: 12rem;
+    object-fit: cover;
+    padding: 0.3rem;
 }
 
 .profile-img:hover {

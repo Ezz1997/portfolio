@@ -59,6 +59,7 @@ const ProjectsSection = () => {
         display="grid"
         gridTemplateColumns="repeat(2,minmax(0,1fr))"
         gridGap={8}
+        flexWrap="wrap"
       >
         {projects.map((project, index) => (
           <Card

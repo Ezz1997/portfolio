@@ -4,8 +4,6 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
-  faMedium,
-  faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack } from "@chakra-ui/react";
 import "../App.css";
@@ -59,6 +57,7 @@ const Header = () => {
           py={4}
           justifyContent="space-between"
           alignItems="center"
+          flexWrap="wrap"
         >
           <nav>
             {socials.map((item, index) => {
@@ -71,7 +70,7 @@ const Header = () => {
             })}
           </nav>
           <nav>
-            <HStack spacing={8} >
+            <HStack spacing={4} >
               <a href="/#projects" onClick={handleClick('projects')} data-testid="projects-section" className="inline-link">Projects</a>
               <a href="/#contact-me" onClick={handleClick('contact-me')} className="inline-link">Contact Me</a>
             </HStack>
