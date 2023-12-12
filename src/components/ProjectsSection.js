@@ -1,6 +1,6 @@
 import React from "react";
 import FullScreenSection from "./FullScreenSection";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, useBreakpointValue } from "@chakra-ui/react";
 import Card from "./Card";
 
 const projects = [
@@ -43,6 +43,8 @@ const projects = [
 ];
 
 const ProjectsSection = () => {
+  const displaySingleCard = useBreakpointValue({ base: true, md: true, lg: false });
+
   return (
     <FullScreenSection
       backgroundColor="#2a4365"
@@ -56,19 +58,29 @@ const ProjectsSection = () => {
       </Heading>
       <Box
         display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
+        gridTemplateColumns={displaySingleCard ? "1fr" : "repeat(2, minmax(0, 1fr))"}
         gridGap={8}
       >
         {projects.map((project, index) => (
-          <Card
-            key={project.title}
-            title={project.title}
-            description={project.description}
-            imageSrc={project.getImageSrc()}
-            url={project.url}
-            data-testid={`project-link-${index}`}
-          >
-          </Card>
+          displaySingleCard ? (
+            <Card
+              key={project.title}
+              title={project.title}
+              description={project.description}
+              imageSrc={project.getImageSrc()}
+              url={project.url}
+              data-testid={`project-link-${index}`}
+            />
+          ) : (
+            <Card
+              key={project.title}
+              title={project.title}
+              description={project.description}
+              imageSrc={project.getImageSrc()}
+              url={project.url}
+              data-testid={`project-link-${index}`}
+            />
+          )
         ))}
       </Box>
     </FullScreenSection>
