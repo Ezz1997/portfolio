@@ -24,15 +24,15 @@ const LandingSection = () => (
           className="profile-img"
         />
         {/* <img className="profile-img" src={PersonalImage} alt="personal image" /> */}
-        <Heading as="h4" size="md" noOfLines={1}>
+        <Heading as="h4" fontSize={["null", "null", "md", "xl", "2xl"]} noOfLines={1}>
           {greeting}
         </Heading>
       </VStack>
-      <VStack spacing={6}>
-        <Heading as="h1" size="3xl" noOfLines={1}>
+      <VStack spacing={3}>
+        <Heading as="h1" fontSize={["xl", "2xl", "3xl", "4xl", "6xl"]} noOfLines={1}>
           {bio1}
         </Heading>
-        <Heading as="h1" size="3xl" noOfLines={1}>
+        <Heading as="h1" fontSize={["xl", "2xl", "3xl", "4xl", "6xl"]} noOfLines={1}>
           {bio2}
         </Heading>
       </VStack>
