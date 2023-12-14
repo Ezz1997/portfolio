@@ -36,10 +36,16 @@ const LandingSection = () => {
       }
     },
     validationSchema: Yup.object({
-      name: Yup.string().required("required"),
-      email: Yup.string().email("Invalid email address").required("required"),
+      name: Yup.string()
+        .max(100, "Reached maximum character limit")
+        .required("required"),
+      email: Yup.string()
+        .email("Invalid email address")
+        .max(100, "Reached maximum character limit")
+        .required("required"),
       comment: Yup.string()
         .min(25, "Must be at least 25 characters")
+        .max(2000, "Reached maximum character limit")
         .required("Required"),
     }),
   });
@@ -71,12 +77,12 @@ const LandingSection = () => {
             <VStack spacing={4}>
               <FormControl isInvalid={formik.errors.name && formik.touched.name}>
                 <FormLabel htmlFor="name">Name</FormLabel>
-                <Input {...formik.getFieldProps('name')} />
+                <Input {...formik.getFieldProps('name')} id="name" />
                 <FormErrorMessage>{formik.errors.name}</FormErrorMessage>
               </FormControl>
               <FormControl isInvalid={formik.errors.email && formik.touched.email}>
                 <FormLabel htmlFor="email">Email Address</FormLabel>
-                <Input {...formik.getFieldProps('email')} type="email" />
+                <Input {...formik.getFieldProps('email')} type="email" id="email" />
                 <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
               </FormControl>
               <FormControl>
