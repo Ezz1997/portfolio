@@ -1,3 +1,6 @@
+This is a portfolio webpage built using React and Chakraui libraries
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
