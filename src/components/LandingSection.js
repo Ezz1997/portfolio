@@ -5,8 +5,9 @@ import PersonalImage from "../images/personal_image.jpg";
 import "../App.css"
 
 const greeting = "Hello, I am Ezz!";
-const bio1 = "A Frontend Developer";
-const bio2 = "Specialised in React";
+const bio1 = "A Versatile Software Engineer";
+const bio2 = "Expertise in React, Full-Stack Development,";
+const bio3 = "Machine Learning, and more...";
 
 const LandingSection = () => (
   <FullScreenSection
@@ -24,16 +25,19 @@ const LandingSection = () => (
           className="profile-img"
         />
         {/* <img className="profile-img" src={PersonalImage} alt="personal image" /> */}
-        <Heading as="h4" fontSize={["null", "null", "md", "xl", "2xl"]} noOfLines={1}>
+        <Heading as="h4" fontSize={["null", "null", "md", "lg", "xl"]} noOfLines={1}>
           {greeting}
         </Heading>
       </VStack>
       <VStack spacing={3}>
-        <Heading as="h1" fontSize={["xl", "2xl", "3xl", "4xl", "6xl"]} noOfLines={1}>
+        <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]} noOfLines={1}>
           {bio1}
         </Heading>
-        <Heading as="h1" fontSize={["xl", "2xl", "3xl", "4xl", "6xl"]} noOfLines={1}>
+        <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]}  noOfLines={1}>
           {bio2}
+        </Heading>
+        <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]}  noOfLines={1}>
+          {bio3}
         </Heading>
       </VStack>
     </VStack>
