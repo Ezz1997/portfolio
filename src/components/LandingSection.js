@@ -16,16 +16,14 @@ const LandingSection = () => (
     isDarkBackground
     backgroundColor="#2a6165"
   >
-    <VStack spacing={[2, 4, 8, 16]}>
+    <VStack spacing={16}>
       <VStack spacing={4} alignItems="center">
         <Avatar
           src={PersonalImage}
           size="2xl"
           name="Ezz"
-          boxSize={['100px', '120px', '140px']} // Set appropriate sizes for different breakpoints
-          objectFit="cover" // Maintain image aspect ratio
+          className="profile-img"
         />
-
         <Heading as="h4" fontSize={["null", "null", "md", "lg", "xl"]} noOfLines={1}>
           {greeting}
         </Heading>
@@ -34,10 +32,10 @@ const LandingSection = () => (
         <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]} noOfLines={1}>
           {bio1}
         </Heading>
-        <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]} noOfLines={1}>
+        <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]}  noOfLines={1}>
           {bio2}
         </Heading>
-        <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]} noOfLines={1}>
+        <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]}  noOfLines={1}>
           {bio3}
         </Heading>
       </VStack>
