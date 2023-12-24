@@ -16,13 +16,13 @@ const LandingSection = () => (
     isDarkBackground
     backgroundColor="#2a6165"
   >
-    <VStack spacing={16}>
+    <VStack spacing={[2, 4, 8, 16]}>
       <VStack spacing={4} alignItems="center">
         <Avatar
           src={PersonalImage}
           size="2xl"
           name="Ezz"
-          // className="profile-img"
+          className="profile-img"
         />
         <Heading as="h4" fontSize={["null", "null", "md", "lg", "xl"]} noOfLines={1}>
           {greeting}
