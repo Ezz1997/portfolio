@@ -22,9 +22,8 @@ const LandingSection = () => (
           src={PersonalImage}
           size="2xl"
           name="Ezz"
-          className="profile-img"
+          // className="profile-img"
         />
-        {/* <img className="profile-img" src={PersonalImage} alt="personal image" /> */}
         <Heading as="h4" fontSize={["null", "null", "md", "lg", "xl"]} noOfLines={1}>
           {greeting}
         </Heading>
