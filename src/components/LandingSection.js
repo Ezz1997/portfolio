@@ -22,7 +22,9 @@ const LandingSection = () => (
           src={PersonalImage}
           size="2xl"
           name="Ezz"
-          className="profile-img"
+          boxSize={['100px', '120px', '140px']} // Set appropriate sizes for different breakpoints
+          objectFit="cover" // Maintain image aspect ratio
+          style={{ height: '140px', width: '140px' }} // Set explicit height and width
         />
         <Heading as="h4" fontSize={["null", "null", "md", "lg", "xl"]} noOfLines={1}>
           {greeting}
@@ -32,10 +34,10 @@ const LandingSection = () => (
         <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]} noOfLines={1}>
           {bio1}
         </Heading>
-        <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]}  noOfLines={1}>
+        <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]} noOfLines={1}>
           {bio2}
         </Heading>
-        <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]}  noOfLines={1}>
+        <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]} noOfLines={1}>
           {bio3}
         </Heading>
       </VStack>
