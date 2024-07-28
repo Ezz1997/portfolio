@@ -1,14 +1,13 @@
 import React from "react";
-import { VStack, Box, Heading, Avatar } from "@chakra-ui/react";
+import { VStack, Heading, Avatar } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
+import personalImage from "../images/personal_image.jpg"
 import "../App.css"
 
 const greeting = "Hello, I am Ezz!";
 const bio1 = "A Versatile Software Engineer";
 const bio2 = "Expertise in React, Full-Stack Development,";
 const bio3 = "Machine Learning, and more...";
-
-const personalImage = process.env.REACT_APP_PERSONAL_IMAGE_URL;
 
 const LandingSection = () => (
   <FullScreenSection
