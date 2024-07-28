@@ -23,8 +23,7 @@ const LandingSection = () => (
           size="2xl"
           name="Ezz"
           boxSize={['100px', '120px', '140px']} // Set appropriate sizes for different breakpoints
-          objectFit="contain" // Maintain image aspect ratio
-          style={{ height: '140px', width: '140px' }} // Set explicit height and width
+          objectFit="cover" // Ensure the image covers the Avatar box while maintaining aspect ratio
         />
         <Heading as="h4" fontSize={["null", "null", "md", "lg", "xl"]} noOfLines={1}>
           {greeting}
