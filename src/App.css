@@ -24,4 +24,14 @@
 .inline-link:hover{
     font-size: large;
 }
+
+/* App.css */
+.avatar-custom {
+    padding: 0.3rem;
+  }
+
+.avatar-custom:hover {
+    box-shadow: 0 0 2px 1px rgba(244, 246, 244, 0.5);
+}
+  
   

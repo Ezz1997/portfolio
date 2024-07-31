@@ -1,8 +1,8 @@
 import React from "react";
-import { VStack, Heading, Avatar } from "@chakra-ui/react";
+import { VStack, Heading, Avatar} from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
-import personalImage from "../images/personal_image.jpg"
-import "../App.css"
+import personalImage from "../images/personal_image.jpg";
+import "../App.css";
 
 const greeting = "Hello, I am Ezz!";
 const bio1 = "A Versatile Software Engineer";
@@ -22,28 +22,41 @@ const LandingSection = () => (
           src={personalImage}
           size="2xl"
           name="Ezz"
-          boxSize={['100px', '120px', '140px']} // Set appropriate sizes for different breakpoints
-          objectFit="cover" // Ensure the image covers the Avatar box while maintaining aspect ratio
+          className="avatar-custom"
         />
-        <Heading as="h4" fontSize={["null", "null", "md", "lg", "xl"]} noOfLines={1}>
+        <Heading
+          as="h4"
+          fontSize={["null", "null", "md", "lg", "xl"]}
+          noOfLines={1}
+        >
           {greeting}
         </Heading>
       </VStack>
       <VStack spacing={3}>
-        <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]} noOfLines={1}>
+        <Heading
+          as="h1"
+          fontSize={["md", "lg", "xl", "2xl", "4xl"]}
+          noOfLines={1}
+        >
           {bio1}
         </Heading>
-        <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]} noOfLines={1}>
+        <Heading
+          as="h1"
+          fontSize={["md", "lg", "xl", "2xl", "4xl"]}
+          noOfLines={1}
+        >
           {bio2}
         </Heading>
-        <Heading as="h1" fontSize={["md", "lg", "xl", "2xl", "4xl"]} noOfLines={1}>
+        <Heading
+          as="h1"
+          fontSize={["md", "lg", "xl", "2xl", "4xl"]}
+          noOfLines={1}
+        >
           {bio3}
         </Heading>
       </VStack>
     </VStack>
-
   </FullScreenSection>
-
 );
 
 export default LandingSection;
