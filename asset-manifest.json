@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4a570bf7.css",
-    "main.js": "/portfolio/static/js/main.d085babf.js",
-    "static/js/111.944ce873.chunk.js": "/portfolio/static/js/111.944ce873.chunk.js",
-    "static/media/personal_image.jpg": "/portfolio/static/media/personal_image.12cf57d3db311fac070a.jpg",
-    "static/media/togetherForOurCity.png": "/portfolio/static/media/togetherForOurCity.99f0d687f1dc54c8a687.png",
-    "static/media/pacman.jpg": "/portfolio/static/media/pacman.83bdae34f202dbf01eaf.jpg",
-    "static/media/ML1.jpg": "/portfolio/static/media/ML1.514fbb1542e575f61b3f.jpg",
-    "static/media/ML2.jpg": "/portfolio/static/media/ML2.dd82b632a04d35fbd806.jpg",
-    "index.html": "/portfolio/index.html",
-    "main.4a570bf7.css.map": "/portfolio/static/css/main.4a570bf7.css.map",
-    "main.d085babf.js.map": "/portfolio/static/js/main.d085babf.js.map",
-    "111.944ce873.chunk.js.map": "/portfolio/static/js/111.944ce873.chunk.js.map"
+    "main.css": "/static/css/main.4a570bf7.css",
+    "main.js": "/static/js/main.69f96185.js",
+    "static/js/111.944ce873.chunk.js": "/static/js/111.944ce873.chunk.js",
+    "static/media/personal_image.jpg": "/static/media/personal_image.12cf57d3db311fac070a.jpg",
+    "static/media/togetherForOurCity.png": "/static/media/togetherForOurCity.99f0d687f1dc54c8a687.png",
+    "static/media/pacman.jpg": "/static/media/pacman.83bdae34f202dbf01eaf.jpg",
+    "static/media/ML1.jpg": "/static/media/ML1.514fbb1542e575f61b3f.jpg",
+    "static/media/ML2.jpg": "/static/media/ML2.dd82b632a04d35fbd806.jpg",
+    "index.html": "/index.html",
+    "main.4a570bf7.css.map": "/static/css/main.4a570bf7.css.map",
+    "main.69f96185.js.map": "/static/js/main.69f96185.js.map",
+    "111.944ce873.chunk.js.map": "/static/js/111.944ce873.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a570bf7.css",
-    "static/js/main.d085babf.js"
+    "static/js/main.69f96185.js"
   ]
 }
